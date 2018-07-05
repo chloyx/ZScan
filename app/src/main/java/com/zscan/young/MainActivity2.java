@@ -28,8 +28,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imageView = findViewById(R.id.iv_test1);
-        imageView2 = findViewById(R.id.iv_test2);
+        imageView = (ImageView) findViewById(R.id.iv_test1);
+        imageView2 = (ImageView)findViewById(R.id.iv_test2);
 
         findViewById(R.id.btn_test1).setOnClickListener(this);
         findViewById(R.id.btn_test2).setOnClickListener(this);

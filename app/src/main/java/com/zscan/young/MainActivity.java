@@ -3,6 +3,9 @@ package com.zscan.young;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.view.SurfaceView;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.scan.young.BaseScanActivity;
@@ -26,11 +29,11 @@ public class MainActivity extends BaseScanActivity {
 
     @Override
     public void initScanViews(Bundle savedInstanceState) {
-        surfaceView = findViewById(R.id.capture_preview);
-        mContainer = findViewById(R.id.capture_containter);
-        mCropLayout = findViewById(R.id.capture_crop_layout);
+        surfaceView = (SurfaceView) findViewById(R.id.capture_preview);
+        mContainer = (RelativeLayout) findViewById(R.id.capture_containter);
+        mCropLayout = (RelativeLayout) findViewById(R.id.capture_crop_layout);
 
-        mQrLineView = findViewById(R.id.capture_scan_line);
+        mQrLineView = (ImageView) findViewById(R.id.capture_scan_line);
 
     }
 
