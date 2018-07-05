@@ -1,6 +1,7 @@
 package com.scan.young;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.res.AssetFileDescriptor;
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -40,7 +41,7 @@ import me.weyye.hipermission.PermissionCallback;
  * 修改备注：
  */
 
-public abstract class BaseScanActivity extends AppCompatActivity implements SurfaceHolder.Callback {
+public abstract class BaseScanActivity extends Activity implements SurfaceHolder.Callback {
     /**
      * The Handler.
      */
